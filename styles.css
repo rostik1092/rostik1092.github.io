@@ -1,0 +1,269 @@
+/**
+ * Базовые стили для всего сайта
+ */
+ *{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+ }
+ body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #e9dfdf;
+    background-color: #c5b9b9;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: 250vh;
+}
+
+
+/**
+ * Другие стили
+ */
+.navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+
+}
+
+.text-color{
+	transition: color 0.3s ease-in-out; /* Плавний перехід коліру */
+
+}
+
+.navbar .container{
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu{
+list-style: none;
+padding-left: 0;
+margin-bottom: 0;
+}
+
+.navbar-menu li{
+	display: inline-block;
+
+}
+
+.navbar-menu li a{
+	display: inline-block;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+	
+}
+
+
+.navbar-menu li a:hover{
+	opacity: 1;
+    text-decoration: none;
+
+}
+
+.navbar-wrap{
+display: flex;
+flex-flow: row nowrap;	
+}
+
+.basket{
+	margin-left: 30px;
+	padding: 15px 30px 20px;
+	background-color: coral;
+	border-radius: 100px;
+    font-size: 17px;
+	color: #fff;
+	box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+	text-decoration: none;
+	transition: all .1s ease-out;
+}
+
+.basket:hover{
+	transform: scale(1.04);
+	color: #fff;
+	box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.navbar-brand{
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+	transition: all .07s ease-in-out;
+
+}
+
+.navbar-brand:hover{
+	color: coral;
+}
+
+
+
+/**
+ * середина сайту
+ */
+ .header{
+	position: relative;
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('image/banners.jpg');
+	}
+
+
+.overlay{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+
+	}
+
+.header .row{
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+
+}
+
+.header-content{
+	text-align: center;
+	position: relative;
+    top: 40px;
+    left: 350px;
+
+	z-index: 2;
+	color: antiquewhite;
+	}
+
+.header-content h1{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 10px;
+
+}	
+
+.header-content h4{
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	opacity: 0.7;
+	margin-bottom: 35px;
+
+	
+}	
+
+.btn-main{
+display: inline-block;
+padding: 10px 35px;
+font-size: 18px;
+border: none;
+background-color: coral;
+text-transform: uppercase;
+text-decoration: none;
+color: #000;
+border-radius: 5px;
+font-weight: 700;
+box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+transition: all .09s ease-out;
+
+
+}
+
+.btn-main:hover{
+	box-shadow: 0 5px 10px rgba(255, 127, 80, .5);
+	transform: scale(1.05);
+    text-decoration: none;
+}
+
+  
+/**
+*catalog
+**/
+.product-catalogue {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .product-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .product-item .price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+   .button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+ .button:hover {
+    background-color: #555;
+  }
+  
+  .notification {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 10px;
+	background-color: #f5f5f5;
+	color: #333;
+	font-size: 16px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .video{
+	display: flex;
+	justify-content: center;
+  }
+  .wrapper{
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+  }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Bookland </title>
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<!-- джава скріпт -->
+	<script src="script.js"></script>
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<a href="#" class="navbar-brand">Bookland</a>
+
+				<div class="navbar-wrap">
+					<ul class="navbar-menu">
+						<li><a href="#">Головна</a> </li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Акції</a></li>
+						<li><a href="#">Про нас</a></li>
+					</ul>
+					<a href="#" class="basket">Кошик</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="header" id="changeBlock" onclick="changeBackground()">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-8 offset-lg-2 header-content">
+					<h1>Мерщій купуй новинки!</h1>
+					<h4>Натискай кнопку, щоб переглянути оновлений асортимент</h4>
+
+					<a href="pages/novelty.html" class="btn-main">Новинки</a>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</div>
+	<div class="video">
+
+		<iframe width="1560" height="715" src="https://www.youtube.com/embed/rm5AS21DXQs" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
+
+	</div>
+	<div class="wrapper">
+		<div class="product-item">
+			<img src="product-1.jpg" alt="Product 1">
+			<div class="text-color">Цей текст змінить колір</div>
+			<p class="text-color">Цей текст також змінить колір</p>
+			<h3>Назва товару</h3>
+			<p>Опис товару</p>
+			<p class="price">Ціна: 150 грн.</p>
+			<a href="#" class="button">Додати в кошик</a>
+		</div>
+
+
+		<div class="product-item">
+			<img src="product-2.jpg" alt="Product 2">
+			<h3>Назва товару</h3>
+			<p>Опис товару</p>
+			<p class="price">Ціна: 150 грн.</p>
+			<a href="#" class="button">Додати в кошик</a>
+		</div>
+
+		<div class="product-item">
+			<img src="product-3.jpg" alt="Product 3">
+			<h3>Назва товару</h3>
+			<p>Опис товару</p>
+			<p class="price">Ціна: 200 грн.</p>
+			<a href="#" class="button">Додати в кошик</a>
+		</div>
+	</div>
+	<div class="wrapper">
+		<button id="change-color-button" class="button">Змінити колір тексту</button>
+	</div>
+	<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web-cha7imz5ye.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+<script src="script.js"></script>
+
+</html>
